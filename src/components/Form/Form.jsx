@@ -10,7 +10,7 @@ export const Form = () => {
   const [number, setNumber] = useState('')
 
   const dispatch = useDispatch();
-  const contacts = useSelector(state => state.contacts);
+  const contacts = useSelector(state => state.contacts.contacts);
 
   const inputChange = event => {
     if (event.target.name === 'name') {
@@ -22,11 +22,11 @@ export const Form = () => {
 
   const onFormSubmit = (e) => {
     e.preventDefault()
-    const isAtList = contacts.find(contact => contact.name === name);
+    /* const isAtList = contacts.find(contact => contact.name === name);
     if (isAtList) {
       Notify.failure('Contact with such name is already exist');
       return;
-    }
+    } */
     const contact = {
       name,
       number,

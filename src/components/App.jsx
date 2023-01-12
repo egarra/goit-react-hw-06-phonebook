@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 
 
 export const App = () => {
-  const contacts = useSelector(state => state.contacts)
+  const contacts = useSelector(state => state.contacts.contacts)
   return (
     <>
       <Section title="Phonebook">
