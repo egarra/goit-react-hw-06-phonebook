@@ -22,11 +22,11 @@ export const Form = () => {
 
   const onFormSubmit = (e) => {
     e.preventDefault()
-    /* const isAtList = contacts.find(contact => contact.name === name);
+    const isAtList = contacts.find(contact => contact.name === name);
     if (isAtList) {
       Notify.failure('Contact with such name is already exist');
       return;
-    } */
+    }
     const contact = {
       name,
       number,
